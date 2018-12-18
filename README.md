@@ -1,5 +1,9 @@
 # react-native-devmenu-trigger
 
+[![npm version](https://badge.fury.io/js/react-native-devmenu-trigger.svg)](https://badge.fury.io/js/react-native-devmenu-trigger)
+
+Lightweight React Native helper library. It allows to trigger dev menu by tapping on the screen with 3 fingers.
+
 ## Getting started
 
 `$ yarn add react-native-devmenu-trigger`
@@ -28,8 +32,12 @@ or
    ```
 3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
    ```
-     compile project(':react-native-devmenu-trigger')
+     implementation project(':react-native-devmenu-trigger')
    ```
+
+#### iOS
+
+iOS does not require additional config
 
 ## Usage
 
@@ -43,7 +51,7 @@ export default class App extends Component {
   render() {
     return (
       <View style={{ flex: 1 }}>
-       <MyOtherViews/>
+       // other components
       </View>
     );
   }
@@ -55,7 +63,7 @@ class App extends Component {
   render() {
     return (
       <View style={{ flex: 1 }}>
-       <MyOtherViews/>
+       // other components
       </View>
     );
   }

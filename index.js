@@ -3,14 +3,16 @@ import { View, PanResponder, NativeModules, Platform } from "react-native";
 
 const { RNDevmenuTrigger, DevMenu } = NativeModules;
 
+const PlatformDevMenu = Platform.select({
+  ios: DevMenu,
+  android: RNDevmenuTrigger,
+  default: () => {}
+});
+
 const responder = PanResponder.create({
   onStartShouldSetPanResponder: (evt, gestureState) => {
     if (gestureState.numberActiveTouches === 3) {
-      if (Platform.OS === "ios") {
-        DevMenu.show();
-      } else if (Platform.OS === "android") {
-        RNDevmenuTrigger.show();
-      }
+      PlatformDevMenu.show();
     }
     return false;
   }

@@ -1,15 +1,31 @@
 {
   "name": "react-native-devmenu-trigger",
   "version": "1.0.1",
-  "description": "",
+  "description": "React Native dev menu helper library.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "react-native"
+    "react-native",
+    "react native",
+    "android dev menu",
+    "ios dev menu",
+    "dev menu"
   ],
-  "author": "",
+  "bugs": {
+    "url": "https://github.com/lukaszchopin/react-native-devmenu-trigger/issues"
+  },
+  "homepage": "https://github.com/lukaszchopin/react-native-devmenu-trigger",
+  "author": {
+    "name": "Łukasz Chludziński",
+    "email": "lukasz.chludzinski@gmail.com",
+    "url": "https://github.com/lukaszchopin"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lukaszchopin/react-native-devmenu-trigger"
+  },
   "license": "",
   "peerDependencies": {
     "react-native": "^0.41.2"
