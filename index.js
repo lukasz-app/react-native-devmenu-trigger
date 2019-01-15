@@ -6,7 +6,7 @@ const { RNDevmenuTrigger, DevMenu } = NativeModules;
 const PlatformDevMenu = Platform.select({
   ios: DevMenu,
   android: RNDevmenuTrigger,
-  default: () => {}
+  default: { show: () => {} }
 });
 
 const responder = PanResponder.create({
